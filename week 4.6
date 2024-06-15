@@ -1,0 +1,10 @@
+n=int(input())
+p=list(str(n))
+s=0
+for i in range(0,len(p)):
+s+=int(p[i]**i+1)
+if(s==n):
+print("yes")
+else:
+print("no")
+
