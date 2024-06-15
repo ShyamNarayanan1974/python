@@ -1,0 +1,12 @@
+l1=set()
+l2=set()
+a=int(input())
+for i in range(a):
+    l1.add(int(input()))
+b=int(input())
+for i in range(b):
+    l2.add(int(input()))
+l1.update(l2)
+m=sorted(list(l1))
+for i in m:
+    print(i,end=' ')
