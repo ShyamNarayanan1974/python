@@ -1,0 +1,12 @@
+a=int(input())
+l=[]
+for i in range(a):
+    l.append(int(input()))
+c=sum(l)//2
+q=0
+for j in l:
+    q+=j
+    if q >=c:
+        q=j
+        break;
+print(l.index(q))
