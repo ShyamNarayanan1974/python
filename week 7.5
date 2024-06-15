@@ -1,0 +1,9 @@
+x=tuple(input().split(','))
+k=int(input())
+l=[]
+for i in x:
+    for j in x:
+        if(int(i)+int(j)==k and ([i,j] and [j,i] not in l)):
+            l.append([i,j])
+            l.append([j,i])
+print(len(l)//2)
